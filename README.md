@@ -9,7 +9,7 @@ Welcome to the Virtual HR project! This AI-driven platform is designed to revolu
 
 Virtual HR is an AI-driven platform that streamlines the recruitment process for software engineering roles. Our platform leverages cutting-edge technologies to automate various stages of recruitment, including:
 
-- Resume analysis
+- Resume analysis 
 - Natural Language Processing (NLP) for virtual interviews
 - Predicting candidate behavior
 - Automated aptitude and programming skill assessments
@@ -18,15 +18,22 @@ By automating these tasks, Virtual HR aims to reduce the time and effort require
 
 ## Features
 
-- **Automated Resume Analysis**: Quickly extract key information from resumes using AI algorithms.
+- **Automated Resume Analysis**: Quickly extract key information from resumes using CBF algorithm.
 - **Virtual Interviews**: Conduct initial candidate interviews through NLP-driven chatbots.
-- **Behavior Prediction**: Use machine learning models to predict candidate behavior and suitability.
+- **Behavior Prediction**: Uses Attention Mechanism algorithm to predict candidate behavior and suitability.
 - **Skill Assessments**: Automatically evaluate candidates' aptitude and programming skills with custom tests.
 
+## Algorithms Used
+
+- Content-Based Filtering
+- NLP
+- Attention Mechanism
+  
 ## Prerequisites
 
 Before you begin, ensure you have met the following requirements:
 
+- **Operating System**: Make sure you have the latest versions of Windows, macOS or Linux for end-users.
 - **Python IDLE**: Make sure you have Python installed. You can download it from the [official website](https://www.python.org/).
 - **WAMP Server**: Install WAMP server for handling the backend. Download it from the [official website](http://www.wampserver.com/en/).
 
