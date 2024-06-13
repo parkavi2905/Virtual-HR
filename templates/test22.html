@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<script>
+// Listen for visibility change events
+/*document.addEventListener('visibilitychange', function() {
+    // Check if the page is hidden
+    if (document.hidden) {
+        alert('User opened another tab');
+    } else {
+       alert('User is on this tab');
+    }
+});*/
+//////////////////////////////////////////////////////////////////
+/*// Create a new BroadcastChannel with a unique channel name
+const channel = new BroadcastChannel('tab-activity');
+
+// Listen for messages on the channel
+channel.addEventListener('message', (event) => {
+    if (event.data === 'open-new-tab') {
+        alert('User opened another tab');
+    }
+});
+
+// Send a message to all other tabs when a new tab is opened
+document.addEventListener('visibilitychange', () => {
+    if (document.hidden) {
+        alert('open-new-tab');
+    }
+});*/
+/////////////////////////////////////////////////////////////////////
+
+</script>
+</head>
+
+<body>
+
+<div id="message" class="message">Try to duplicate this browser tab</div>
+</body>
+</html>

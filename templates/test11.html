@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            padding: 40px;
+            background: rgb(247, 240, 155);
+        }
+
+        #my-box {
+            margin-top: 30px;
+            background: rgb(206, 69, 92);
+            width: 500px;
+            height: 350px;
+            cursor: pointer;
+        }
+    </style>
+
+    <title>KindaCode.com</title>
+</head>
+
+<body>
+    <h1>KindaCode.com</h1>
+    <div id="my-box"></div>
+
+    <script>
+        window.onclick = function (event) {
+            var myBox = document.getElementById('my-box');
+
+            if (event.target.contains(myBox) && event.target !== myBox) {
+              alert('You clicked outside the box!');
+            } else {
+                alert('You clicked inside the box!');
+            }
+        }
+    </script>
+</body>
+
+</html>

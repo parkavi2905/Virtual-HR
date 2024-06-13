@@ -1,0 +1,2 @@
+After swapping, first number = 20
+After swapping, second number = 10

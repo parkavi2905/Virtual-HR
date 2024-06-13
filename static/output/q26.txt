@@ -1,0 +1,2 @@
+The ASCII value of a is: 97
+The ASCII value of g is: 103

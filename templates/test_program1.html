@@ -1,0 +1,223 @@
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Virtual HR</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- favicon
+		============================================ -->
+    <link rel="shortcut icon" type="image/x-icon" href="../static/img/favicon.ico">
+    <!-- Google Fonts
+		============================================ -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900" rel="stylesheet">
+    <!-- Bootstrap CSS
+		============================================ -->
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <!-- Bootstrap CSS
+		============================================ -->
+    <link rel="stylesheet" href="../static/css/font-awesome.min.css">
+    <!-- owl.carousel CSS
+		============================================ -->
+    <link rel="stylesheet" href="../static/css/owl.carousel.css">
+    <link rel="stylesheet" href="../static/css/owl.theme.css">
+    <link rel="stylesheet" href="../static/css/owl.transitions.css">
+    <!-- animate CSS
+		============================================ -->
+    <link rel="stylesheet" href="../static/css/animate.css">
+    <!-- normalize CSS
+		============================================ -->
+    <link rel="stylesheet" href="../static/css/normalize.css">
+    <!-- meanmenu icon CSS
+		============================================ -->
+    <link rel="stylesheet" href="../static/css/meanmenu.min.css">
+    <!-- main CSS
+		============================================ -->
+    <link rel="stylesheet" href="../static/css/main.css">
+    <!-- educate icon CSS
+		============================================ -->
+    <link rel="stylesheet" href="../static/css/educate-custon-icon.css">
+    <!-- morrisjs CSS
+		============================================ -->
+    <link rel="stylesheet" href="../static/css/morrisjs/morris.css">
+    <!-- mCustomScrollbar CSS
+		============================================ -->
+    <link rel="stylesheet" href="../static/css/scrollbar/jquery.mCustomScrollbar.min.css">
+    <!-- metisMenu CSS
+		============================================ -->
+    <link rel="stylesheet" href="../static/css/metisMenu/metisMenu.min.css">
+    <link rel="stylesheet" href="../static/css/metisMenu/metisMenu-vertical.css">
+    <!-- calendar CSS
+		============================================ -->
+    <link rel="stylesheet" href="../static/css/calendar/fullcalendar.min.css">
+    <link rel="stylesheet" href="../static/css/calendar/fullcalendar.print.min.css">
+    <!-- forms CSS
+		============================================ -->
+    <link rel="stylesheet" href="../static/css/form/all-type-forms.css">
+    <!-- style CSS
+		============================================ -->
+    <link rel="stylesheet" href="../static/style.css">
+    <!-- responsive CSS
+		============================================ -->
+    <link rel="stylesheet" href="../static/css/responsive.css">
+    <!-- modernizr JS
+		============================================ -->
+    <script src="../static/js/vendor/modernizr-2.8.3.min.js"></script>
+		
+	<style>
+.txtarea {
+resize: none;
+outline:none;
+width:100%;
+height:500px;
+border: 3px solid #cccccc;
+padding: 5px;
+font-family:Arial, Helvetica, sans-serif;
+background-position:bottom right;
+background-repeat:no-repeat;
+font-size:14px;
+color:#000000;
+
+}
+.txtarea2 {
+resize: none;
+outline:none;
+width:100%;
+height:70px;
+border: 3px solid #cccccc;
+padding: 5px;
+font-family:Arial, Helvetica, sans-serif;
+background-position:bottom right;
+background-repeat:no-repeat;
+font-size:14px;
+color:#000000;
+
+}
+</style>
+
+</head>
+
+<body style="background-color:#FFFFFF">
+   
+   
+    <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <div class="content-profile" style="background:#FFFFFF">
+                                                           
+														   <form name="form1" method="post">
+							  
+                          <textarea name="ccode" style="background:#FFFFFF;" placeholder="Enter the code" class="txtarea">{{ccode}}</textarea>
+						  
+						  <p>&nbsp;</p>
+						  <div class="row">
+						  	<div class="col-md-4">
+						  <input type="text" name="fname" placeholder="Filename" class="form-control">
+						  	</div>
+							<div class="col-md-4">
+						  <button type="submit" class="btn btn-primary waves-effect waves-light mg-b-15">Save and Run</button>
+						  	</div>
+						  </div>
+						  </form>
+						  {% if msg=="ok" %}
+						  	{% if program=="C Program" %}
+						  <iframe src="http://localhost/virtual/cmd.php?fname={{fname}}" frameborder="0" width="10" height="10"></iframe>
+						  	{% elif program=="CPP" %}
+						<iframe src="http://localhost/virtual/cmdcpp.php?fname={{fname}}" frameborder="0" width="10" height="10"></iframe>	
+							{% elif program=="Java" %}
+						<iframe src="http://localhost/virtual/cmdjava.php?fname={{fname}}" frameborder="0" width="10" height="10"></iframe>	
+							{% elif program=="PHP" %}
+						<iframe src="http://localhost/virtual/cmdphp.php?fname={{fname}}" frameborder="0" width="10" height="10"></iframe>	
+							{% elif program=="Python" %}
+							<iframe src="http://localhost:5000/sub_program?fname={{fname}}" frameborder="0" width="10" height="10"></iframe>	
+							{% endif %}
+						  <script>
+//Using setTimeout to execute a function after 5 seconds.
+setTimeout(function () {
+   //Redirect with JavaScript
+   window.parent.location.href= '/test_program1?act=1&fname={{fname}}&pid={{pid}}&vid={{vid}}';
+}, 3000);
+</script>
+ {% endif %}
+						
+						{% if msg=="yes" %}
+						<script>
+   window.location.href= '/test_cam?pid={{pid}}&vid={{vid}}';
+</script>
+						 {% endif %}
+						 {% if msg=="no" %}
+						 <script language="javascript">
+														   alert("Program Test score is low, You are Rejected!");
+														   window.location.href="/userhome";
+														   </script>
+						 {% endif %}
+						<form name="form2" method="post">
+						
+						{% if act=="1" %}
+						
+                          <textarea name="answer" style="background:#FFFFFF;" class="txtarea2">{{answer}}</textarea>
+						{% else %}
+						 <textarea name="answer" style="background:#FFFFFF;" class="txtarea2"></textarea>
+						{% endif %}
+						  </form>
+    
+	
+	
+
+                                  
+    <!-- jquery
+		============================================ -->
+    <script src="../static/js/vendor/jquery-1.12.4.min.js"></script>
+    <!-- bootstrap JS
+		============================================ -->
+    <script src="../static/js/bootstrap.min.js"></script>
+    <!-- wow JS
+		============================================ -->
+    <script src="../static/js/wow.min.js"></script>
+    <!-- price-slider JS
+		============================================ -->
+    <script src="../static/js/jquery-price-slider.js"></script>
+    <!-- meanmenu JS
+		============================================ -->
+    <script src="../static/js/jquery.meanmenu.js"></script>
+    <!-- owl.carousel JS
+		============================================ -->
+    <script src="../static/js/owl.carousel.min.js"></script>
+    <!-- sticky JS
+		============================================ -->
+    <script src="../static/js/jquery.sticky.js"></script>
+    <!-- scrollUp JS
+		============================================ -->
+    <script src="../static/js/jquery.scrollUp.min.js"></script>
+    <!-- mCustomScrollbar JS
+		============================================ -->
+    <script src="../static/js/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="../static/js/scrollbar/mCustomScrollbar-active.js"></script>
+    <!-- metisMenu JS
+		============================================ -->
+    <script src="../static/js/metisMenu/metisMenu.min.js"></script>
+    <script src="../static/js/metisMenu/metisMenu-active.js"></script>
+    <!-- morrisjs JS
+		============================================ -->
+    <script src="../static/js/sparkline/jquery.sparkline.min.js"></script>
+    <script src="../static/js/sparkline/jquery.charts-sparkline.js"></script>
+    <!-- calendar JS
+		============================================ -->
+    <script src="../static/js/calendar/moment.min.js"></script>
+    <script src="../static/js/calendar/fullcalendar.min.js"></script>
+    <script src="../static/js/calendar/fullcalendar-active.js"></script>
+    <!-- tab JS
+		============================================ -->
+    <script src="../static/js/tab.js"></script>
+    <!-- plugins JS
+		============================================ -->
+    <script src="../static/js/plugins.js"></script>
+    <!-- main JS
+		============================================ -->
+    <script src="../static/js/main.js"></script>
+    <!-- tawk chat JS
+		============================================ -->
+    <!--<script src="../static/js/tawk-chat.js"></script>-->
+</body>
+
+</html>

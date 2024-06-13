@@ -1,0 +1,8 @@
+Name: Nirmal
+Emp. ID: EM2201
+Salary: 15000
+***
+Name: Vani
+Emp. ID: EM2202
+Salary: 18000
+***

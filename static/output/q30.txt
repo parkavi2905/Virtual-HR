@@ -1,0 +1,1 @@
+Two arrays are equal

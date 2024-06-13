@@ -1,0 +1,2 @@
+Sum = 90
+Average = 30

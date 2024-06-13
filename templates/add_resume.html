@@ -1,0 +1,912 @@
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Virtual HR</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- favicon
+		============================================ -->
+    <link rel="shortcut icon" type="image/x-icon" href="../static/img/favicon.ico">
+    <!-- Google Fonts
+		============================================ -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900" rel="stylesheet">
+    <!-- Bootstrap CSS
+		============================================ -->
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <!-- Bootstrap CSS
+		============================================ -->
+    <link rel="stylesheet" href="../static/css/font-awesome.min.css">
+    <!-- owl.carousel CSS
+		============================================ -->
+    <link rel="stylesheet" href="../static/css/owl.carousel.css">
+    <link rel="stylesheet" href="../static/css/owl.theme.css">
+    <link rel="stylesheet" href="../static/css/owl.transitions.css">
+    <!-- animate CSS
+		============================================ -->
+    <link rel="stylesheet" href="../static/css/animate.css">
+    <!-- normalize CSS
+		============================================ -->
+    <link rel="stylesheet" href="../static/css/normalize.css">
+    <!-- meanmenu icon CSS
+		============================================ -->
+    <link rel="stylesheet" href="../static/css/meanmenu.min.css">
+    <!-- main CSS
+		============================================ -->
+    <link rel="stylesheet" href="../static/css/main.css">
+    <!-- educate icon CSS
+		============================================ -->
+    <link rel="stylesheet" href="../static/css/educate-custon-icon.css">
+    <!-- morrisjs CSS
+		============================================ -->
+    <link rel="stylesheet" href="../static/css/morrisjs/morris.css">
+    <!-- mCustomScrollbar CSS
+		============================================ -->
+    <link rel="stylesheet" href="../static/css/scrollbar/jquery.mCustomScrollbar.min.css">
+    <!-- metisMenu CSS
+		============================================ -->
+    <link rel="stylesheet" href="../static/css/metisMenu/metisMenu.min.css">
+    <link rel="stylesheet" href="../static/css/metisMenu/metisMenu-vertical.css">
+    <!-- calendar CSS
+		============================================ -->
+    <link rel="stylesheet" href="../static/css/calendar/fullcalendar.min.css">
+    <link rel="stylesheet" href="../static/css/calendar/fullcalendar.print.min.css">
+    <!-- forms CSS
+		============================================ -->
+    <link rel="stylesheet" href="../static/css/form/all-type-forms.css">
+    <!-- dropzone CSS
+		============================================ -->
+    <link rel="stylesheet" href="../static/css/dropzone/dropzone.css">
+    <!-- style CSS
+		============================================ -->
+    <link rel="stylesheet" href="../static/style.css">
+    <!-- responsive CSS
+		============================================ -->
+    <link rel="stylesheet" href="../static/css/responsive.css">
+    <!-- modernizr JS
+		============================================ -->
+    <script src="../static/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	<![endif]-->
+    <!-- Start Left menu area -->
+    <div class="left-sidebar-pro">
+        <nav id="sidebar" class="">
+            <div class="sidebar-header">
+                <a href="../static/index.html"><img class="main-logo" src="../static/img/logo/logo.png" alt="" /></a>
+                <strong><a href="../static/index.html"><img src="../static/img/logo/logosn.png" alt="" /></a></strong>
+            </div>
+            <div class="left-custom-menu-adp-wrap comment-scrollbar">
+                <nav class="sidebar-nav left-sidebar-menu-pro">
+                    <ul class="metismenu" id="menu1">
+                        <li><a href="/userhome">
+								   <span class="educate-icon educate-home icon-wrap"></span>
+								   <span class="mini-click-non">Dashboard</span></a></li>
+					
+                        
+                        <li>
+					  <li>
+                            <a class="has-arrow" href="/add_resume" aria-expanded="false"><span class="educate-icon educate-student icon-wrap"></span> <span class="mini-click-non">Resume</span></a>
+                            <ul class="submenu-angle" aria-expanded="false">
+                                <li><a title="All Students" href="/add_resume"><span class="mini-sub-pro">Add Resume</span></a></li>
+                                <li><a title="Add Students" href="/view_resume"><span class="mini-sub-pro">View Resume</span></a></li>
+                            </ul>
+                      </li>
+						
+						<li>
+                            <a class="has-arrow" href="/candidate_vacancy" aria-expanded="false"><span class="educate-icon educate-course icon-wrap"></span> <span class="mini-click-non">Interview</span></a>
+                            <ul class="submenu-angle" aria-expanded="false">
+								<li><a title="All Courses" href="/candidate_vacancy"><span class="mini-sub-pro">Vacancies</span></a></li>
+                                <li><a title="All Courses" href="/candidate_interview"><span class="mini-sub-pro">Interview Details</span></a></li>
+                            </ul>
+                        </li>
+						
+						<li class="active">
+                            <a  href="/job_details"><span class="educate-icon educate-professor icon-wrap"></span> <span class="mini-click-non">Job Details</span></a>                        </li>
+						
+						<li id="removable">
+                            <a href="/logout"><span class="educate-icon educate-pages icon-wrap"></span> <span class="mini-click-non">Logout</span></a>                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </nav>
+    </div>
+    <!-- End Left menu area -->
+    <!-- Start Welcome area -->
+    <div class="all-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="logo-pro">
+                        <a href="../static/index.html"><img class="main-logo" src="../static/img/logo/logo.png" alt="" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-advance-area">
+            <div class="header-top-area">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="header-top-wraper">
+                                <div class="row">
+                                    <div class="col-lg-1 col-md-0 col-sm-1 col-xs-12">
+                                        <div class="menu-switcher-pro">
+                                            <button type="button" id="sidebarCollapse" class="btn bar-button-pro header-drl-controller-btn btn-info navbar-btn">
+													<i class="educate-icon educate-nav"></i>
+												</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-7 col-sm-6 col-xs-12">
+                                        <div class="header-top-menu tabl-d-n">
+                                            <ul class="nav navbar-nav mai-top-nav">
+                                                <li class="nav-item"><a href="/userhome" class="nav-link">Home</a>
+                                                </li>
+                                                <li class="nav-item"><a href="/candidate_vacancy" class="nav-link">Vacancies</a>
+                                                </li>
+                                                <li class="nav-item"><a href="/candidate_interview" class="nav-link">Interview</a>
+                                                </li>
+                                               
+                                                <li class="nav-item"><a href="/job_details" class="nav-link">Job Details</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                                        <div class="header-right-info">
+                                            <ul class="nav navbar-nav mai-top-nav header-right-menu">
+                                                
+                                                
+                                                <li class="nav-item">
+                                                    <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle">
+															<img src="../static/img/pro2.jpg" alt="" />
+															<span class="admin-name">{{data[1]}}</span>
+															<i class="fa fa-angle-down edu-icon edu-down-arrow"></i>
+														</a>
+                                                    <ul role="menu" class="dropdown-header-top author-log dropdown-menu animated zoomIn">
+                                                        <!--<li><a href="#"><span class="edu-icon edu-home-admin author-log-ic"></span>My Account</a>
+                                                        </li>-->
+                                                        <!--<li><a href="/profile"><span class="edu-icon edu-user-rounded author-log-ic"></span>My Profile</a>
+                                                        </li>-->
+                                                       <!-- <li><a href="#"><span class="edu-icon edu-money author-log-ic"></span>User Billing</a>
+                                                        </li>
+                                                        <li><a href="#"><span class="edu-icon edu-settings author-log-ic"></span>Settings</a>
+                                                        </li>-->
+                                                        <li><a href="/logout"><span class="edu-icon edu-locked author-log-ic"></span>Log Out</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Mobile Menu start -->
+            <div class="mobile-menu-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="mobile-menu">
+                                <nav id="dropdown">
+                                    <ul class="mobile-menu-nav">
+                                        <li><a data-target="#Charts" href="/userhome">Home <span class="admin-project-icon edu-icon"></span></a>
+                                            
+                                        </li>
+										
+									
+                                       
+                                        <li><a data-toggle="collapse" data-target="#demoevent" href="/add_resume">Resume <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
+                                            <ul id="demoevent" class="collapse dropdown-header-top">
+                                                <li><a href="/add_resume">Add Resume</a>
+                                                </li>
+                                                <li><a href="/view_resume">View Resume</a>
+                                                </li>
+                                                
+                                            </ul>
+                                        </li>
+                                        <li><a data-toggle="collapse" data-target="#demopro" href="/candidate_vacancy">Interview <span class="admin-project-icon edu-icon edu-down-arrow"></span></a>
+                                            <ul id="demopro" class="collapse dropdown-header-top">
+                                                <li><a href="/candidate_vacancy">Vacancies</a>
+                                                </li>
+                                                <li><a href="/candidate_interview">Interview Details</a>
+                                                </li>
+                                                
+                                            </ul>
+                                        </li>
+                                        <li><a  href="/job_details">Job Details <span class="admin-project-icon edu-icon"></span></a>
+                                           
+                                        </li>
+                                        <li><a data-toggle="collapse" data-target="#demolibra" href="/logout">Logout <span class="admin-project-icon edu-icon"></span></a>
+                                            
+                                        </li>
+                                      
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Mobile Menu end -->
+            <div class="breadcome-area">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="breadcome-list single-page-breadcome">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                        <div class="breadcome-heading">
+                                           
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                        <ul class="breadcome-menu">
+                                            <li><a href="/userhome">Home</a> <span class="bread-slash"></span>
+                                            </li>
+                                           <!-- <li><span class="bread-blod">Add Student</span>-->
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Single pro tab review Start-->
+        <div class="single-pro-review-area mt-t-30 mg-b-15">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="product-payment-inner-st">
+                            <ul id="myTabedu1" class="tab-review-design">
+                                <li class="active"><a href="#description">Basic Information</a></li>
+                                <li><a href="#school"> School</a></li>
+                                <li><a href="#degree">Qualification</a></li>
+								<li><a href="#experience">Experience</a></li>
+								<li><a href="#resume">Resume</a></li>
+								<li><a href="#photo">Photo</a></li>
+                            </ul>
+                            <div id="myTabContent" class="tab-content custom-product-edit">
+                                <div class="product-tab-list tab-pane fade active in" id="description">
+                                    <div class="row">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <div class="review-content-section">
+                                             
+                                                    <form action="" name="form1" method="post">
+													{% if msg=="ok" %}
+													<span style="color:#00CC00">Deleted Success</span>
+													<script>
+//Using setTimeout to execute a function after 5 seconds.
+setTimeout(function () {
+   //Redirect with JavaScript
+   window.location.href= '/add_resume#degree';
+}, 3000);
+</script>
+													{% endif %}
+													{% if msg=="ok2" %}
+													<span style="color:#00CC00">Deleted Success</span>
+													<script>
+//Using setTimeout to execute a function after 5 seconds.
+setTimeout(function () {
+   //Redirect with JavaScript
+   window.location.href= '/add_resume#experience';
+}, 3000);
+</script>
+													{% endif %}
+													{% if msg=="success" %}
+													<span style="color:#00CC00">Added Success</span>
+													<script>
+//Using setTimeout to execute a function after 5 seconds.
+setTimeout(function () {
+   //Redirect with JavaScript
+   window.location.href= '/add_resume';
+}, 3000);
+</script>
+
+													{% endif %}
+                                                        <div class="row">
+                                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                                                <div class="form-group">
+																<label>Full Name</label>
+                                                                    <input name="name" type="text" class="form-control" value="{{data[1]}}" placeholder="">
+                                                                </div>
+																<div class="form-group">
+																<label>Gender</label>
+                                                                    <select name="gender" class="form-control">
+																		<option value="">Select Gender</option>
+																		<option value="Male" {% if data[2]=="Male" %} selected {% endif %}>Male</option>
+																		<option value="Female" {% if data[2]=="Female" %} selected {% endif %}>Female</option>
+																	</select>
+                                                                </div>
+                                                                
+																<div class="form-group">
+																	<label>Date of Birth</label>
+                                                                    <input name="dob" id="finish" type="text" class="form-control" value="{{data[3]}}" placeholder="">
+                                                                </div>
+                                                                
+                                                                <div class="form-group">
+																	<label>Mobile No.</label>
+                                                                    <input name="mobile" type="text" maxlength="10" class="form-control" value="{{data[4]}}" placeholder="">
+                                                                </div>
+																<div class="form-group">
+																	<label>Email</label>
+                                                                    <input name="email" type="text" class="form-control" value="{{data[5]}}" placeholder="">
+                                                                </div>
+																<div class="form-group">
+																	<label>Address</label>
+                                                                    <input name="address" type="text" class="form-control" value="{{data[8]}}" placeholder="">
+                                                                </div>
+                                                                <div class="form-group">
+																	<label>City</label>
+                                                                    <input type="text" name="city" class="form-control" value="{{data[9]}}">
+																			
+                                                                </div>
+                                                                <div class="form-group">
+																	<label>Postal Code</label>
+                                                                    <input name="postal_code" type="text" class="form-control" value="{{data[10]}}" placeholder="">
+                                                                </div>
+                                                               
+                                                            </div>
+                                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                                                <div class="form-group">
+																	<label>Father Name</label>
+                                                                    <input name="father_name" type="text" class="form-control" value="{{data[15]}}" placeholder="">
+                                                                </div>
+																<div class="form-group">
+																	<label>Father Occupation</label>
+                                                                    <input name="father_occupation" type="text" class="form-control" value="{{data[16]}}" placeholder="">
+                                                                </div>
+																<div class="form-group">
+																	<label>Father Job Type</label>
+                                                                    <select name="father_jobtype" class="form-control">
+																	<option value="">-Select-</option>
+																	<option {% if data[17]=="Government" %} selected {% endif %} >Government</option>
+																	<option {% if data[17]=="Private" %} selected {% endif %}>Private</option>
+																	</select>
+                                                                </div>
+																<div class="form-group">
+																	<label>Father Job Location</label>
+                                                                    <input name="father_job_location" type="text" value="{{data[18]}}" class="form-control" placeholder="">
+                                                                </div>
+																<div class="form-group">
+																	<label>Father Annual Income</label>
+                                                                    <input name="father_annual_income" type="text" value="{{data[19]}}" class="form-control" placeholder="">
+                                                                </div>
+																<div class="form-group">
+																	<label>Mother Name</label>
+                                                                    <input name="mother_name" type="text" class="form-control" value="{{data[20]}}" placeholder="">
+                                                                </div>
+																<div class="form-group">
+																	<label>Mother Occupation</label>
+                                                                    <input name="mother_occupation" type="text" value="{{data[21]}}" class="form-control" placeholder="">
+                                                                </div>
+																<div class="form-group">
+																	<label>Mother Job Type</label>
+                                                                    <select name="mother_jobtype" class="form-control">
+																	<option value="">-Select-</option>
+																	<option {% if data[22]=="Government" %} selected {% endif %} >Government</option>
+																	<option {% if data[22]=="Private" %} selected {% endif %}>Private</option>
+																	</select>
+                                                                </div>
+																<div class="form-group">
+																	<label>Mother Job Location</label>
+                                                                    <input name="mother_job_location" type="text" value="{{data[23]}}" class="form-control" placeholder="">
+                                                                </div>
+                                                                <div class="form-group">
+																	<label>Mother Annual Income</label>
+                                                                    <input name="mother_annual_income" type="text" value="{{data[24]}}" class="form-control" placeholder="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-lg-12">
+                                                                <div class="payment-adress">
+                                                                    <button type="submit" class="btn btn-primary waves-effect waves-light">Submit</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-tab-list tab-pane fade" id="school">
+                                    <div class="row">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <div class="review-content-section">
+                                                <div class="row">
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+													{% if msg=="success2" %}
+													<span style="color:#00CC00">Added Success</span>
+													<script>
+//Using setTimeout to execute a function after 5 seconds.
+setTimeout(function () {
+   //Redirect with JavaScript
+   window.location.href= '/add_resume';
+}, 3000);
+</script>
+
+													{% endif %}
+													<form name="form2" method="post" action="/add_school">
+                                                        <div class="devit-card-custom">
+														<div class="row">
+														<div class="col-md-6">
+                                                            <div class="form-group">
+																<label>SSLC School Name</label>
+                                                                <input type="text" name="sslc_school" class="form-control" value="{{data[11]}}" placeholder="">
+                                                            </div>
+                                                            <div class="form-group">
+																<label>SSLC Mark (%)</label>
+                                                                <input type="text" name="sslc_mark" class="form-control" value="{{data[12]}}" placeholder="">
+                                                            </div>
+															
+														</div>
+														
+														<div class="col-md-6">	
+                                                            <div class="form-group">
+																<label>HSC School Name</label>
+                                                                <input type="text" name="hsc_school" class="form-control" value="{{data[13]}}" placeholder="">
+                                                            </div>
+                                                            <div class="form-group">
+																<label>HSC Mark (%)</label>
+                                                                <input type="text" name="hsc_mark" class="form-control" value="{{data[14]}}" placeholder="">
+                                                            </div>
+                                                            <button type="submit" class="btn btn-primary waves-effect waves-light">Submit</button>
+                                                        </div>
+														</div>
+														
+														</div>
+														
+													</form>	
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+								
+								<div class="product-tab-list tab-pane fade" id="degree">
+                                    <div class="row">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <div class="review-content-section">
+                                                <div class="row">
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+													{% if msg=="success3" %}
+													<span style="color:#00CC00">Added Success</span>
+													<script>
+//Using setTimeout to execute a function after 5 seconds.
+setTimeout(function () {
+   //Redirect with JavaScript
+   window.location.href= '/add_resume';
+}, 3000);
+</script>
+
+													{% endif %}
+													<form name="form3" method="post" action="/add_qualification">
+                                                        <div class="devit-card-custom">
+                                                            <div class="form-group">
+																<label>Level</label>
+                                                                <select name="level" class="form-control">
+																	<option value="">-Select-</option>
+																	<option>Diploma</option>
+																	<option>UG-Arts</option>
+																	<option>PG-Arts</option>
+																	<option>UG-Engineering</option>
+																	<option>PG-Engineering</option>
+																	</select>
+                                                            </div>
+                                                            <div class="form-group">
+																Qualification
+                                                                <input type="text" name="qualification" class="form-control" placeholder="">
+                                                            </div>
+                                                            <div class="form-group">
+																Year of Passout
+                                                                <input type="text" name="passout_year" class="form-control" placeholder="">
+                                                            </div>
+															<div class="form-group">
+																Percentage of Mark
+                                                                <input type="text" name="percentage" class="form-control" placeholder="">
+                                                            </div>
+                                                            <div class="form-group">
+																College Name
+                                                                <input type="text" name="college" class="form-control" placeholder="">
+                                                            </div>
+															<div class="form-group">
+																No. of Arrears
+                                                                <input type="arrears" name="arrears" class="form-control" placeholder="">
+                                                            </div><div class="form-group">
+																Cleared
+                                                                <input type="text" name="cleared" class="form-control" placeholder="">
+                                                            </div>
+                                                             <button type="submit" class="btn btn-primary waves-effect waves-light">Submit</button>
+                                                        </div>
+														</form>
+														{% if s1=="1" %}
+														<p>&nbsp;</p>
+														<div class="row">
+														<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+															<div class="product-status-wrap drp-lst">
+																<h4>Qualification Details</h4>
+																<div class="add-product">
+																<!--	<a href="add-department.html">Add Departments</a>-->
+																</div>
+																<div class="asset-inner">
+																	<table>
+																		<tr>
+																			<th>S.No</th>
+																			<th>Level</th>
+																			<th>Qualification</th>
+																			<th>Passed out</th>
+																			<th>Percentage</th>
+																			<th>College</th>
+																			<th>Arreaes</th>
+																			<th>Cleared</th>
+																			<th>Setting</th>
+																		</tr>
+																		{% for rs1 in data1 %}
+																		<tr>
+																			<td>{{loop.index}}</td>
+																			<td>{{rs1[2]}}</td>
+																			<td>{{rs1[3]}}</td>
+																			<td>{{rs1[4]}}</td>
+																			<td>{{rs1[5]}}</td>
+																			<td>{{rs1[6]}}</td>
+																			<td>{{rs1[7]}}</td>
+																			<td>{{rs1[8]}}</td>
+																			<td>
+																				<a data-toggle="tooltip" href="/edit_quali" title="Edit" class="pd-setting-ed"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+																				<a data-toggle="tooltip" href="/add_resume?act=del&did={{rs1[0]}}" title="Trash" class="pd-setting-ed"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+																			</td>
+																		</tr>
+																		{% endfor %}
+																	</table>
+																</div>
+															</div>
+														</div>
+													</div>
+													{% endif %}	
+														
+														
+														
+														
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+								
+								 <div class="product-tab-list tab-pane fade" id="experience">
+                                    <div class="row">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <div class="review-content-section">
+												<div class="row">
+													<div class="col-lg-12">
+													{% if msg=="success4" %}
+													<span style="color:#00CC00">Added Success</span>
+													<script>
+//Using setTimeout to execute a function after 5 seconds.
+setTimeout(function () {
+   //Redirect with JavaScript
+   window.location.href= '/add_resume';
+}, 3000);
+</script>
+
+													{% endif %}
+													<form name="form4" method="post" action="/add_experience">
+														<div class="devit-card-custom">
+															<div class="form-group">
+																<label>Designation</label>
+																<input type="text" name="designation" class="form-control" placeholder="">
+															</div>
+															<div class="form-group res-mg-t-15">
+																	<label>Experience</label>
+                                                                    <textarea name="experience" placeholder=""></textarea>
+                                                                </div>
+															<div class="form-group">
+																<label>Year / Month</label>
+																<div class="row">
+																<div class="col-md-6">
+																<select name="year" class="form-control">
+																	<option value="0">-Year-</option>
+																	<option>0</option>
+																	<option>1</option>
+																	<option>2</option>
+																	<option>3</option>
+																	<option>4</option>
+																	<option>5</option>
+																	<option>6</option>
+																	<option>7</option>
+																	<option>8</option>
+																	<option>9</option>
+																	<option>10</option>
+																	<option>11</option>
+																	<option>12</option>
+																	<option>13</option>
+																	<option>14</option>
+																	<option>15</option>
+																	</select>
+																	</div>
+																	<div class="col-md-6">
+																	<select name="month" class="form-control">
+																	<option value="0">-Month-</option>
+																	<option>0</option>
+																	<option>1</option>
+																	<option>2</option>
+																	<option>3</option>
+																	<option>4</option>
+																	<option>5</option>
+																	<option>6</option>
+																	<option>7</option>
+																	<option>8</option>
+																	<option>9</option>
+																	<option>10</option>
+																	<option>11</option>
+																	</select>
+																	</div>
+																	</div>
+															</div>
+															<div class="form-group">
+																Company Name
+																<input type="text" name="company_name" class="form-control" placeholder="">
+															</div>
+															<div class="form-group">
+																Location
+																<input type="text" name="location" class="form-control" placeholder="">
+															</div>
+															<button type="submit" class="btn btn-primary waves-effect waves-light">Submit</button>
+														</div>
+														</form>
+														
+														{% if s2=="1" %}
+														<p>&nbsp;</p>
+														<div class="row">
+														<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+															<div class="product-status-wrap drp-lst">
+																<h4>Experience Details</h4>
+																<div class="add-product">
+																<!--	<a href="add-department.html">Add Departments</a>-->
+																</div>
+																<div class="asset-inner">
+																	<table>
+																		<tr>
+																			<th>S.No</th>
+																			<th>Company</th>
+																			<th>Location</th>
+																			<th>Designation</th>
+																			<th>Experience</th>
+																			<th>Duration</th>
+																			
+																			<th>Setting</th>
+																		</tr>
+																		{% for rs2 in data2 %}
+																		<tr>
+																			<td>{{loop.index}}</td>
+																			<td>{{rs2[6]}}</td>
+																			<td>{{rs2[7]}}</td>
+																			<td>{{rs2[2]}}</td>
+																			<td>{{rs2[3]}}</td>
+																			<td>
+																			{% if rs2[4]>1 %}
+																			{{rs2[4]}} years
+																			{% elif rs2[4]>0 %}
+																			{{rs2[4]}} year
+																			{% endif %}
+																			
+																			{% if rs2[5]>1 %}
+																			{{rs2[5]}} months
+																			{% elif rs2[5]>0 %}
+																			{{rs2[5]}} month
+																			{% endif %}
+																			
+ 																			</td>
+																			<td>
+																				<a data-toggle="tooltip" href="/edit_exp" title="Edit" class="pd-setting-ed"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+																				<a data-toggle="tooltip" href="/add_resume?act=del2&did={{rs2[0]}}" title="Trash" class="pd-setting-ed"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+																			</td>
+																		</tr>
+																		{% endfor %}
+																	</table>
+																</div>
+															</div>
+														</div>
+													</div>
+													{% endif %}
+													
+													
+													</div>
+												</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+								<div class="product-tab-list tab-pane fade" id="resume">
+                                    <div class="row">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <div class="review-content-section">
+                                                <div class="row">
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+													<div id="dropzone1" class="pro-ad">
+													{% if msg=="success5" %}
+													<span style="color:#00CC00">Added Success</span>
+													<script>
+//Using setTimeout to execute a function after 5 seconds.
+setTimeout(function () {
+   //Redirect with JavaScript
+   window.location.href= '/add_resume';
+}, 3000);
+</script>
+
+													{% endif %}
+													<form name="form5" method="post" enctype="multipart/form-data" action="/upload_resume" class="dropzone dropzone-custom needsclick add-professors" id="demo1-upload">
+                                                        <div class="devit-card-custom">
+                                                           <div class="form-group alert-up-pd">
+                                                                    <div class="dz-message needsclick download-custom">
+                                                                        <i class="fa fa-download edudropnone" aria-hidden="true"></i>
+                                                                        <h2 class="edudropnone">Drop image here or click to upload.</h2>
+                                                                        <p class="edudropnone"><span class="note needsclick">(Select your Resume)</span>
+                                                                        </p>
+                                                                        <input name="file" class="hd-pro-img" type="file" />
+                                                                    </div>
+                                                                </div>
+                                                            <p align="center">
+                                                             <button type="submit" class="btn btn-primary waves-effect waves-light">Submit</button>
+															 </p>
+                                                        </div>
+														</form>
+														</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+								<div class="product-tab-list tab-pane fade" id="photo">
+                                    <div class="row">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <div class="review-content-section">
+                                                <div class="row">
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+													<div id="dropzone1" class="pro-ad">
+													{% if msg=="success6" %}
+													<span style="color:#00CC00">Photo Uploaded Success</span>
+													<script>
+//Using setTimeout to execute a function after 5 seconds.
+setTimeout(function () {
+   //Redirect with JavaScript
+   window.location.href= '/add_resume';
+}, 3000);
+</script>
+
+													{% endif %}
+													<form name="form6" method="post" enctype="multipart/form-data" action="/upload_photo" class="dropzone dropzone-custom needsclick add-professors" id="demo1-upload">
+                                                        <div class="devit-card-custom">
+                                                           <div class="form-group alert-up-pd">
+                                                                    <div class="dz-message needsclick download-custom">
+                                                                        <i class="fa fa-download edudropnone" aria-hidden="true"></i>
+                                                                        <h2 class="edudropnone">Drop image here or click to upload.</h2>
+                                                                        <p class="edudropnone"><span class="note needsclick">(Select your Photo)</span>
+                                                                        </p>
+                                                                        <input name="file2" class="hd-pro-img" type="file" />
+                                                                    </div>
+                                                                </div>
+                                                            <p align="center">
+                                                             <button type="submit" class="btn btn-primary waves-effect waves-light">Submit</button>
+															 </p>
+                                                        </div>
+														</form>
+														</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+								
+                               
+								
+								
+								
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright-area">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="footer-copy-right">
+                            <p>Virtual HR <a href="https://colorlib.com/wp/templates/"></a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jquery
+		============================================ -->
+    <script src="../static/js/vendor/jquery-1.12.4.min.js"></script>
+    <!-- bootstrap JS
+		============================================ -->
+    <script src="../static/js/bootstrap.min.js"></script>
+    <!-- wow JS
+		============================================ -->
+    <script src="../static/js/wow.min.js"></script>
+    <!-- price-slider JS
+		============================================ -->
+    <script src="../static/js/jquery-price-slider.js"></script>
+    <!-- meanmenu JS
+		============================================ -->
+    <script src="../static/js/jquery.meanmenu.js"></script>
+    <!-- owl.carousel JS
+		============================================ -->
+    <script src="../static/js/owl.carousel.min.js"></script>
+    <!-- sticky JS
+		============================================ -->
+    <script src="../static/js/jquery.sticky.js"></script>
+    <!-- scrollUp JS
+		============================================ -->
+    <script src="../static/js/jquery.scrollUp.min.js"></script>
+    <!-- mCustomScrollbar JS
+		============================================ -->
+    <script src="../static/js/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="../static/js/scrollbar/mCustomScrollbar-active.js"></script>
+    <!-- metisMenu JS
+		============================================ -->
+    <script src="../static/js/metisMenu/metisMenu.min.js"></script>
+    <script src="../static/js/metisMenu/metisMenu-active.js"></script>
+    <!-- morrisjs JS
+		============================================ -->
+    <script src="../static/js/sparkline/jquery.sparkline.min.js"></script>
+    <script src="../static/js/sparkline/jquery.charts-sparkline.js"></script>
+    <!-- calendar JS
+		============================================ -->
+    <script src="../static/js/calendar/moment.min.js"></script>
+    <script src="../static/js/calendar/fullcalendar.min.js"></script>
+    <script src="../static/js/calendar/fullcalendar-active.js"></script>
+    <!-- maskedinput JS
+		============================================ -->
+    <script src="../static/js/jquery.maskedinput.min.js"></script>
+    <script src="../static/js/masking-active.js"></script>
+    <!-- datepicker JS
+		============================================ -->
+    <script src="../static/js/datepicker/jquery-ui.min.js"></script>
+    <script src="../static/js/datepicker/datepicker-active.js"></script>
+    <!-- form validate JS
+		============================================ -->
+    <!--<script src="../static/js/form-validation/jquery.form.min.js"></script>
+    <script src="../static/js/form-validation/jquery.validate.min.js"></script>
+    <script src="../static/js/form-validation/form-active.js"></script>-->
+    <!-- dropzone JS
+		============================================ -->
+    <script src="../static/js/dropzone/dropzone.js"></script>
+    <!-- tab JS
+		============================================ -->
+    <script src="../static/js/tab.js"></script>
+    <!-- plugins JS
+		============================================ -->
+    <script src="../static/js/plugins.js"></script>
+    <!-- main JS
+		============================================ -->
+    <script src="../static/js/main.js"></script>
+    <!-- tawk chat JS
+		============================================ -->
+    <!--<script src="../static/js/tawk-chat.js"></script>-->
+</body>
+
+</html>

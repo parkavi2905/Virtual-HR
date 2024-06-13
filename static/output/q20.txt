@@ -1,0 +1,2 @@
+Area of Room = 150
+Volume of Room = 1800

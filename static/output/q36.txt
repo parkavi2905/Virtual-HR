@@ -1,0 +1,36 @@
+
+
+perdigree function range-->0.08 to 2.42
+
+insulin--normal 5 to 15 
+
+
+glucose--> below 100 normal, 100 to 125 prediabetes, above 125 have diabetes--consult doctor
+		high danger 315+, low danger----50===>Medical attention
+
+
+bp--->below 140/90 
+
+normal---below--120----------80
+elevated----120--129--------below 80
+high bp hypertension stage1---130 139-------80-89
+high bp stage2----140----90 or high
+	high than 180---  120
+
+
+
+ skin thickness of males ranged from 0.6 mm to 2.60 mm and in females it ranged from 1.55 mm to 3.00 mm
+
+
+1.Pregnancies
+Number of times pregnant
+2.Glucose
+Plasma glucose concentration a 2 hours in an oral glucose tolerance test
+
+3.Diastolic blood pressure (mm Hg)
+4.SkinThickness
+Triceps skin fold thickness (mm)
+
+BMI
+Body mass index (weight in kg/(height in m)^2)---0 to 67.1
+age 21 - 81

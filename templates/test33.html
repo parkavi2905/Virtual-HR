@@ -1,0 +1,24 @@
+<html>
+<body>
+   <h3>Using the <i> onblur and onfocus method </i> to detect if tab is active or not in the browser using JavaScript.</h3>
+   <div id = "output"> </div><br>
+   <button onclick = "callFunc()"> Click to show text </button>
+   <script>
+      let output = document.getElementById("output");
+      function callFunc() {
+         output.innerHTML += "You have clicked the button! </br>";
+      }
+      
+      // The function will invoke when the user changes the tab
+      window.onblur = function () {
+	  alert("click other tab");
+         output.innerHTML += "browser tab is changed </br>";
+      };
+      
+      // If users come back to the current tab again, the below function will invoke
+      window.onfocus = function () {
+         output.innerHTML += "Browser tab is again active! </br>";
+      };
+   </script>
+</body>
+</html>
